@@ -1,0 +1,3 @@
+[submodule "Wepp"]
+	path = external/Wepp
+	url = https://github.com/GustavJones/Wepp.git

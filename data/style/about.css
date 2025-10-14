@@ -1,0 +1,29 @@
+main {
+  color: #202938;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8vh 6vw;
+  border: 4px solid #202938;
+  border-radius: 5px;
+  background-color: #95c2c4;
+  padding: 14vh 2vw;
+  text-align: center;
+}
+
+main h1 {
+  margin: 2vh 1vw;
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+main p {
+  font-size: 1.5rem;
+  margin: 1vh 6vw;
+}
+
+main a {
+  color: #122a54;
+}

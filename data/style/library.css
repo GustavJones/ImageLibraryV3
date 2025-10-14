@@ -1,0 +1,117 @@
+:root {
+  --side-margin: 4vw;
+  --border-width: 4px;
+}
+
+#main-folder-title {
+  margin: 3vh var(--side-margin);
+  padding: 0.5vh 0.5vw;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--light-text-color);
+  background-color: var(--base-color);
+  border-style: solid;
+  border-color: var(--accent-color);
+  border-width: var(--border-width);
+}
+
+#main-folder-list {
+  /* background-color: var(--base-color); */
+  /* padding: 3vh 2vw; */
+  display: flex;
+  flex-direction: column;
+  margin: 1vh var(--side-margin);
+  border-radius: 16px;
+  gap: 4vh 4vw;
+}
+
+.folder-list-item {
+  --tile-width: 65%;
+
+  background-color: var(--base-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2vh 1vw;
+  gap: 0.5vh 0.5vw;
+  border-style: solid;
+  border-color: var(--accent-color);
+  border-width: var(--border-width);
+}
+
+.folder-list-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.folder-list-item ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  gap: 1vh 1vw;
+  width: 100%;
+}
+
+.folder-list-item li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.folder-list-item img {
+  border-radius: 10px;
+  max-height: 75vh;
+  max-width: var(--tile-width);
+}
+
+.folder-list-item div {
+  width: var(--tile-width);
+  padding: 1vh 1vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+.folder-list-item button {
+  /* font-size: 1rem; */
+  padding: 1vh 3vw;
+  color: var(--light-text-color);
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  border-radius: 5px;
+  border-width: var(--border-width) / 2;
+  border-color: var(--accent-color);
+  border-style: solid;
+}
+
+.folder-list-item button:hover {
+  opacity: 0.7;
+}
+
+.folder-list-item button:active {
+  color: white;
+  background-color: var(--base-color);
+}
+
+.folder-list-item h2 {
+  text-align: center;
+  color: var(--light-text-color);
+  padding: 0.5vh 1.5vw;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 1vh 1vw;
+  margin-top: 0vh;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  border-width: var(--border-width) / 2;
+  border-color: var(--accent-color);
+  border-style: solid;
+}
