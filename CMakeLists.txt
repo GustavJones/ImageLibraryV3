@@ -3,6 +3,7 @@ project(ImageLibrary VERSION 3.0.0)
 enable_language(ASM_NASM)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(IMAGE_LIBRARY_BINARY_RUNTIME_DIR ${CMAKE_BINARY_DIR}/bin CACHE PATH "Path to output executables and their data")
 
 option(BUILD_SHARED_LIBS OFF)
 option(BUILD_STATIC_LIBS ON)
