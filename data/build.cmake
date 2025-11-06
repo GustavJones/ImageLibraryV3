@@ -6,7 +6,7 @@ file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/bin/data")
 file(MAKE_DIRECTORY "${CMAKE_BINARY_DIR}/bin/data/scripts")
 
 file(GLOB HTML_FILES "${CMAKE_SOURCE_DIR}/data/*.html")
-file(GLOB SCRIPT_FILES "${CMAKE_SOURCE_DIR}/data/scripts/*.js")
+file(GLOB SCRIPT_FILES "${CMAKE_SOURCE_DIR}/data/build/scripts/*.js")
 set(STYLE_DIRECTORY "${CMAKE_SOURCE_DIR}/data/style")
 set(ASSETS_DIRECTORY "${CMAKE_SOURCE_DIR}/data/assets")
 
