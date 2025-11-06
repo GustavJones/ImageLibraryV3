@@ -10,7 +10,7 @@ file(GLOB SCRIPT_FILES "${CMAKE_SOURCE_DIR}/data/scripts/*.js")
 set(STYLE_DIRECTORY "${CMAKE_SOURCE_DIR}/data/style")
 set(ASSETS_DIRECTORY "${CMAKE_SOURCE_DIR}/data/assets")
 
-add_custom_target(ImageLibrary-Website-Dependencies ALL COMMAND ${NPM_EXECUTABLE} install WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/data COMMENT "Installing npm dependencies")
+add_custom_target(ImageLibrary-Website-Dependencies ALL COMMAND ${NPM_EXECUTABLE} install --include=dev WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/data COMMENT "Installing npm dependencies")
 add_custom_target(ImageLibrary-Website ALL COMMAND ${NPM_EXECUTABLE} run build WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/data COMMENT "Building ImageLibrary-Website" DEPENDS ImageLibrary-Website-Dependencies)
 
 foreach(HTML_FILE ${HTML_FILES})
